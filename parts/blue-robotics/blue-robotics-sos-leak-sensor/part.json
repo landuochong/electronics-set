@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.1.0",
+  "id": "blue-robotics/blue-robotics-sos-leak-sensor",
+  "legacy_ids": [
+    "blue-robotics-sos-leak-sensor"
+  ],
+  "name": "Blue Robotics SOS 漏水传感器",
+  "manufacturer_id": "blue-robotics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "module",
+  "capabilities": [
+    "leak_detection",
+    "water_ingress_alarm"
+  ],
+  "interfaces": [
+    "GPIO"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.3,
+      "typ": 3.3,
+      "max": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 20,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "SOS Leak Sensor Product Page",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sensors-cameras/leak-sensor/sos-leak-sensor/"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "blue-robotics-sos-leak-sensor",
+    "source_files": [
+      "data/electronics_kb/entries/blue-robotics-sos-leak-sensor.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/blue-robotics-sos-leak-sensor.md": "83baf3634ae7ca95ab15e070ab583a3f5f9ac680d8a15817c3efd86fc7d38982"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "blue-robotics-sos-leak-sensor",
+    "name": "Blue Robotics SOS 漏水传感器",
+    "manufacturer": "Blue Robotics",
+    "category": "sensor",
+    "kind": "leak_detection_module",
+    "capabilities": [
+      "leak_detection",
+      "water_ingress_alarm"
+    ],
+    "interfaces": [
+      "GPIO"
+    ],
+    "supply_v": {
+      "min": 3.3,
+      "typ": 3.3,
+      "max": 5.0
+    },
+    "planning_active_current_ma": 20,
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "SOS Leak Sensor Product Page",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sensors-cameras/leak-sensor/sos-leak-sensor/"
+    }
+  }
+}

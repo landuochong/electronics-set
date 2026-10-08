@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/stm32f446re",
+  "legacy_ids": [
+    "stm32f446re"
+  ],
+  "name": "STM32F446RE MCU",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "mcu",
+  "product_type": "chip",
+  "capabilities": [
+    "i2c",
+    "spi",
+    "uart",
+    "adc",
+    "can",
+    "usb"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "USB",
+    "GPIO",
+    "ADC",
+    "PWM"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.7,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "STM32F446RE product page",
+      "authority": "official",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f446re.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "stm32f446re",
+    "source_files": [
+      "data/electronics_kb/entries/stm32f446re.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/stm32f446re.md": "5298fd264f892aaabbe6f3652152b61f919417327126b16d26ed8874600e7da6"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "stm32f446re",
+    "name": "STM32F446RE MCU",
+    "manufacturer": "STMicroelectronics",
+    "category": "mcu",
+    "kind": "microcontroller",
+    "family": "STM32F4",
+    "capabilities": [
+      "i2c",
+      "spi",
+      "uart",
+      "adc",
+      "can",
+      "usb"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "USB",
+      "GPIO",
+      "ADC",
+      "PWM"
+    ],
+    "supply_v": {
+      "min": 1.7,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "STM32F446RE product page",
+      "authority": "official",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f446re.html"
+    }
+  }
+}

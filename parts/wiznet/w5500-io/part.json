@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1.0",
+  "id": "wiznet/w5500-io",
+  "legacy_ids": [
+    "w5500-io"
+  ],
+  "name": "W5500-io 以太网模块",
+  "manufacturer_id": "wiznet",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "communication",
+  "product_type": "module",
+  "capabilities": [
+    "ethernet"
+  ],
+  "interfaces": [
+    "SPI"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 3.3,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 150,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "W5500-io official documentation",
+      "authority": "official",
+      "url": "https://docs.wiznet.io/Product/ioModule/W5500-io"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "w5500-io",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "w5500-io",
+    "name": "W5500-io 以太网模块",
+    "manufacturer": "WIZnet",
+    "category": "communication",
+    "kind": "communication_module",
+    "family": "WIZnet W5500",
+    "capabilities": [
+      "ethernet"
+    ],
+    "interfaces": [
+      "SPI"
+    ],
+    "supply_v": {
+      "typ": 3.3
+    },
+    "planning_active_current_ma": 150,
+    "lifecycle": "active",
+    "confidence": 0.93,
+    "verification": "source_verified",
+    "source": {
+      "title": "W5500-io official documentation",
+      "authority": "official",
+      "url": "https://docs.wiznet.io/Product/ioModule/W5500-io"
+    }
+  }
+}

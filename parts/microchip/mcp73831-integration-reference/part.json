@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "id": "microchip/mcp73831-integration-reference",
+  "legacy_ids": [
+    "mcp73831-integration-reference"
+  ],
+  "name": "MCP73831 单节锂电线性充电器（外围电路待设计）",
+  "manufacturer_id": "microchip",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "power",
+  "product_type": "reference_design",
+  "capabilities": [
+    "single_cell_li_ion_charging"
+  ],
+  "interfaces": [
+    "POWER"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.75,
+      "typ": 5.0,
+      "max": 6.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "MCP73831/2 Datasheet",
+      "authority": "official_chip_reference",
+      "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "mcp73831-integration-reference",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "mcp73831-integration-reference",
+    "name": "MCP73831 单节锂电线性充电器（外围电路待设计）",
+    "manufacturer": "Microchip Technology",
+    "category": "power",
+    "kind": "power_ic_reference",
+    "capabilities": [
+      "single_cell_li_ion_charging"
+    ],
+    "interfaces": [
+      "POWER"
+    ],
+    "supply_v": {
+      "min": 3.75,
+      "typ": 5.0,
+      "max": 6.0
+    },
+    "max_charge_current_a": 0.5,
+    "lifecycle": "active",
+    "confidence": 0.92,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "MCP73831/2 Datasheet",
+      "authority": "official_chip_reference",
+      "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf"
+    }
+  }
+}

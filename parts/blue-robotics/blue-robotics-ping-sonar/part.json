@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.1.0",
+  "id": "blue-robotics/blue-robotics-ping-sonar",
+  "legacy_ids": [
+    "blue-robotics-ping-sonar"
+  ],
+  "name": "Blue Robotics Ping 单波束声呐",
+  "manufacturer_id": "blue-robotics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "instrument",
+  "capabilities": [
+    "sonar",
+    "distance",
+    "underwater_distance",
+    "altitude_above_bottom"
+  ],
+  "interfaces": [
+    "UART",
+    "RS485"
+  ],
+  "specifications": {},
+  "sources": [
+    {
+      "id": "primary",
+      "title": "Ping Sonar Altimeter and Echosounder Product Page",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sonars/echosounders/ping-sonar-r2-rp/"
+    }
+  ],
+  "evidence": [],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "blue-robotics-ping-sonar",
+    "source_files": [
+      "data/electronics_kb/entries/blue-robotics-ping-sonar.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/blue-robotics-ping-sonar.md": "1a9e374277336d2a56b2e1091c00eaa7092635b9095c9d0de99f0dcd86d41c66"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "blue-robotics-ping-sonar",
+    "name": "Blue Robotics Ping 单波束声呐",
+    "manufacturer": "Blue Robotics",
+    "category": "sensor",
+    "kind": "underwater_single_beam_sonar",
+    "capabilities": [
+      "sonar",
+      "distance",
+      "underwater_distance",
+      "altitude_above_bottom"
+    ],
+    "interfaces": [
+      "UART",
+      "RS485"
+    ],
+    "external_power_required": true,
+    "lifecycle": "active",
+    "confidence": 0.97,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "measurement_range": {
+      "distance_m": {
+        "min": 0.2,
+        "max": 100
+      },
+      "depth_rating_m": 300
+    },
+    "source": {
+      "title": "Ping Sonar Altimeter and Echosounder Product Page",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sonars/echosounders/ping-sonar-r2-rp/"
+    }
+  }
+}

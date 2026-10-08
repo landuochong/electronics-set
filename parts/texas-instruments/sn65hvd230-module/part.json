@@ -1,0 +1,121 @@
+{
+  "schema_version": "0.1.0",
+  "id": "texas-instruments/sn65hvd230-module",
+  "legacy_ids": [
+    "sn65hvd230-module"
+  ],
+  "name": "SN65HVD230 CAN 模块",
+  "manufacturer_id": "texas-instruments",
+  "manufacturer_role": "reference_chip_vendor",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "communication",
+  "product_type": "component",
+  "capabilities": [
+    "can"
+  ],
+  "interfaces": [
+    "CAN"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 3.3,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 15,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 10,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "SN65HVD230 product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/SN65HVD230"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "只明确参考芯片厂家，具体模块/载板制造商未知",
+    "旧条目缺少产品类型，暂归 component",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "sn65hvd230-module",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "sn65hvd230-module",
+    "name": "SN65HVD230 CAN 模块",
+    "manufacturer": "Texas Instruments/reference module",
+    "category": "communication",
+    "capabilities": [
+      "can"
+    ],
+    "interfaces": [
+      "CAN"
+    ],
+    "supply_v": {
+      "typ": 3.3
+    },
+    "planning_active_current_ma": 15,
+    "planning_sleep_current_ua": 10,
+    "unit_price_cny": 15,
+    "lifecycle": "active",
+    "confidence": 0.82,
+    "verification": "needs_board_vendor_review",
+    "source": {
+      "title": "SN65HVD230 product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/SN65HVD230"
+    }
+  }
+}

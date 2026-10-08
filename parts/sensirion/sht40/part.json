@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.1.0",
+  "id": "sensirion/sht40",
+  "legacy_ids": [
+    "sht40"
+  ],
+  "name": "SHT40 温湿度传感器（模块载板待选）",
+  "manufacturer_id": "sensirion",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "chip",
+  "capabilities": [
+    "temperature_humidity"
+  ],
+  "interfaces": [
+    "I2C"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.08,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 0.6,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 1,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "SHT4x Datasheet",
+      "authority": "official_chip_reference",
+      "url": "https://sensirion.com/products/catalog/SHT40"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "sht40",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/sht40.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/sht40.md": "adf7d8b82dfa4c100c09a443e9e2afb19bf0c6288431b372c4ca7655a979efa5"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "sht40",
+    "name": "SHT40 温湿度传感器（模块载板待选）",
+    "manufacturer": "Sensirion",
+    "category": "sensor",
+    "kind": "sensor_ic",
+    "capabilities": [
+      "temperature_humidity"
+    ],
+    "interfaces": [
+      "I2C"
+    ],
+    "supply_v": {
+      "min": 1.08,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "default_i2c_address": "0x44",
+    "planning_active_current_ma": 0.6,
+    "planning_sleep_current_ua": 1,
+    "unit_price_cny": 22,
+    "lifecycle": "active",
+    "confidence": 0.95,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "SHT4x Datasheet",
+      "authority": "official_chip_reference",
+      "url": "https://sensirion.com/products/catalog/SHT40"
+    }
+  }
+}

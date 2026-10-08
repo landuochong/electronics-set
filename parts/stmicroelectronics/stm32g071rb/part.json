@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/stm32g071rb",
+  "legacy_ids": [
+    "stm32g071rb"
+  ],
+  "name": "STM32G071RB MCU",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "mcu",
+  "product_type": "chip",
+  "capabilities": [
+    "i2c",
+    "spi",
+    "uart",
+    "adc",
+    "can"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "GPIO",
+    "ADC",
+    "PWM"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.7,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "STM32G071RB product page",
+      "authority": "official",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32g071rb.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "stm32g071rb",
+    "source_files": [
+      "data/electronics_kb/entries/stm32g071rb.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/stm32g071rb.md": "4a0fab27f42428deecf40107b092cc85c753d4cc2525744a219d2f769b141e30"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "stm32g071rb",
+    "name": "STM32G071RB MCU",
+    "manufacturer": "STMicroelectronics",
+    "category": "mcu",
+    "kind": "microcontroller",
+    "family": "STM32G0",
+    "capabilities": [
+      "i2c",
+      "spi",
+      "uart",
+      "adc",
+      "can"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "GPIO",
+      "ADC",
+      "PWM"
+    ],
+    "supply_v": {
+      "min": 1.7,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "STM32G071RB product page",
+      "authority": "official",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32g071rb.html"
+    }
+  }
+}

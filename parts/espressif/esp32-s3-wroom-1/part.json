@@ -1,0 +1,125 @@
+{
+  "schema_version": "0.1.0",
+  "id": "espressif/esp32-s3-wroom-1",
+  "legacy_ids": [
+    "esp32-s3-wroom-1"
+  ],
+  "name": "ESP32-S3-WROOM-1 模组",
+  "manufacturer_id": "espressif",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "wireless_module",
+  "product_type": "module",
+  "capabilities": [
+    "wifi",
+    "ble",
+    "i2c",
+    "spi",
+    "uart",
+    "usb",
+    "adc",
+    "i2s"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "USB",
+    "GPIO",
+    "ADC",
+    "I2S"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.0,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "ESP32-S3-WROOM-1/1U Datasheet",
+      "authority": "official",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "esp32-s3-wroom-1",
+    "source_files": [
+      "data/electronics_kb/entries/esp32-s3-wroom-1.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/esp32-s3-wroom-1.md": "0aa6fa0a2d8eb62eda02d01e1bf78ad885c0835f59f1dc7e42f1ff7c10787b5c"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "esp32-s3-wroom-1",
+    "name": "ESP32-S3-WROOM-1 模组",
+    "manufacturer": "Espressif",
+    "category": "wireless_module",
+    "kind": "certified_wireless_module",
+    "family": "ESP32-S3",
+    "capabilities": [
+      "wifi",
+      "ble",
+      "i2c",
+      "spi",
+      "uart",
+      "usb",
+      "adc",
+      "i2s"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "USB",
+      "GPIO",
+      "ADC",
+      "I2S"
+    ],
+    "supply_v": {
+      "min": 3.0,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "ESP32-S3-WROOM-1/1U Datasheet",
+      "authority": "official",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+    }
+  }
+}

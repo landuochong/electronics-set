@@ -1,0 +1,125 @@
+{
+  "schema_version": "0.1.0",
+  "id": "texas-instruments/ina219-integration-reference",
+  "legacy_ids": [
+    "ina219-integration-reference"
+  ],
+  "name": "INA219 电流电压监测器件（模块集成待复核）",
+  "manufacturer_id": "texas-instruments",
+  "manufacturer_role": "reference_chip_vendor",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "reference_design",
+  "capabilities": [
+    "current",
+    "voltage",
+    "power_monitor"
+  ],
+  "interfaces": [
+    "I2C"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.0,
+      "typ": 3.3,
+      "max": 5.5,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 1,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "INA219 Product Page and Datasheet Rev. G",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/INA219"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "只明确参考芯片厂家，具体模块/载板制造商未知",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "ina219-integration-reference",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/ina219-integration-reference.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/ina219-integration-reference.md": "6f2ff42fda9961c28efbdb1c2bda173b93ae2974de2189344434c6e4653bb0c3"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "ina219-integration-reference",
+    "name": "INA219 电流电压监测器件（模块集成待复核）",
+    "manufacturer": "Texas Instruments/reference module",
+    "category": "sensor",
+    "kind": "monitor_ic_reference",
+    "capabilities": [
+      "current",
+      "voltage",
+      "power_monitor"
+    ],
+    "interfaces": [
+      "I2C"
+    ],
+    "supply_v": {
+      "min": 3.0,
+      "typ": 3.3,
+      "max": 5.5
+    },
+    "default_i2c_address": "0x40",
+    "planning_active_current_ma": 1,
+    "lifecycle": "active",
+    "confidence": 0.92,
+    "verification": "needs_board_vendor_review",
+    "integration_review_required": true,
+    "measurement_range": {
+      "bus_voltage_v": {
+        "min": 0,
+        "max": 26
+      }
+    },
+    "source": {
+      "title": "INA219 Product Page and Datasheet Rev. G",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/INA219"
+    }
+  }
+}

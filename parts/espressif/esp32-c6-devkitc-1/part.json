@@ -1,0 +1,159 @@
+{
+  "schema_version": "0.1.0",
+  "id": "espressif/esp32-c6-devkitc-1",
+  "legacy_ids": [
+    "esp32-c6-devkitc-1"
+  ],
+  "name": "ESP32-C6-DevKitC-1",
+  "manufacturer_id": "espressif",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "controller_board",
+  "product_type": "board",
+  "capabilities": [
+    "wifi",
+    "ble",
+    "zigbee",
+    "thread",
+    "i2c",
+    "spi",
+    "uart",
+    "usb",
+    "adc"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "USB",
+    "GPIO"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 140,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "measured_board_sleep_current_ua": {
+      "value": null,
+      "unit": "uA",
+      "basis": "measured",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "ESP32-C6-DevKitC-1 v1.2 User Guide",
+      "authority": "official",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html"
+    },
+    {
+      "id": "pinout",
+      "title": "ESP32-C6-DevKitC-1 v1.2 User Guide",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html",
+      "authority": "official",
+      "section": "Hardware Reference > Header Block"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/measured_board_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "引脚为历史部分 GPIO 摘录，不是完整引脚表"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "esp32-c6-devkitc-1",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/esp32-c6-devkitc-1.md",
+      "data/board_pins.json",
+      "data/sources.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/esp32-c6-devkitc-1.md": "481f0ca520e2d35d963dd678927c5c1b0c2098195e34e2afb55632295e033ddf",
+      "data/board_pins.json": "b350ae52324c5fc1b90d594c3f8e11050bf98b1353f7e47fa80095899cc5e7ce",
+      "data/sources.json": "0756624935509bd5e0b394e67578a09cadd654e57f8069616debb3c9312ceccf"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "esp32-c6-devkitc-1",
+    "name": "ESP32-C6-DevKitC-1",
+    "manufacturer": "Espressif",
+    "category": "controller_board",
+    "kind": "development_board",
+    "family": "ESP32-C6",
+    "capabilities": [
+      "wifi",
+      "ble",
+      "zigbee",
+      "thread",
+      "i2c",
+      "spi",
+      "uart",
+      "usb",
+      "adc"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "USB",
+      "GPIO"
+    ],
+    "supply_v": {
+      "typ": 5.0
+    },
+    "planning_active_current_ma": 140,
+    "measured_board_sleep_current_ua": null,
+    "lifecycle": "active",
+    "confidence": 0.94,
+    "verification": "source_verified",
+    "source": {
+      "title": "ESP32-C6-DevKitC-1 v1.2 User Guide",
+      "authority": "official",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html"
+    }
+  }
+}

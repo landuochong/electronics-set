@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.1.0",
+  "id": "espressif/esp32-c5-devkitc-1",
+  "legacy_ids": [
+    "esp32-c5-devkitc-1"
+  ],
+  "name": "ESP32-C5-DevKitC-1",
+  "manufacturer_id": "espressif",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "controller_board",
+  "product_type": "board",
+  "capabilities": [
+    "wifi",
+    "wifi_5ghz",
+    "ble",
+    "zigbee",
+    "thread",
+    "i2c",
+    "spi",
+    "uart",
+    "usb",
+    "adc",
+    "can_fd"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "USB",
+    "GPIO",
+    "ADC",
+    "PWM"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 150,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "measured_board_sleep_current_ua": {
+      "value": null,
+      "unit": "uA",
+      "basis": "measured",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "ESP32-C5-DevKitC-1 v1.2 User Guide",
+      "authority": "official",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp32-c5-devkitc-1/user_guide.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/measured_board_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "esp32-c5-devkitc-1",
+    "source_files": [
+      "data/electronics_kb/entries/esp32-c5-devkitc-1.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/esp32-c5-devkitc-1.md": "6625bcbdfd900a5801d814737dab4e58f8f283e06720b42ae68326df155be0ef"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "esp32-c5-devkitc-1",
+    "name": "ESP32-C5-DevKitC-1",
+    "manufacturer": "Espressif",
+    "category": "controller_board",
+    "kind": "development_board",
+    "family": "ESP32-C5",
+    "capabilities": [
+      "wifi",
+      "wifi_5ghz",
+      "ble",
+      "zigbee",
+      "thread",
+      "i2c",
+      "spi",
+      "uart",
+      "usb",
+      "adc",
+      "can_fd"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "USB",
+      "GPIO",
+      "ADC",
+      "PWM"
+    ],
+    "supply_v": {
+      "typ": 5.0
+    },
+    "planning_active_current_ma": 150,
+    "measured_board_sleep_current_ua": null,
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "source": {
+      "title": "ESP32-C5-DevKitC-1 v1.2 User Guide",
+      "authority": "official",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp32-c5-devkitc-1/user_guide.html"
+    }
+  }
+}

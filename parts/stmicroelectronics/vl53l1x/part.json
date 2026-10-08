@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/vl53l1x",
+  "legacy_ids": [
+    "vl53l1x"
+  ],
+  "name": "VL53L1X ToF 测距器件（载板待选）",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "chip",
+  "capabilities": [
+    "distance"
+  ],
+  "interfaces": [
+    "I2C"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 2.6,
+      "typ": 3.3,
+      "max": 3.5,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 20,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 5,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "VL53L1X Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "vl53l1x",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/vl53l1x.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/vl53l1x.md": "52fcf6f420171ad7a9cc88e99498b0fa3c2dec9b182f342ddd20f84555e0bf63"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "vl53l1x",
+    "name": "VL53L1X ToF 测距器件（载板待选）",
+    "manufacturer": "STMicroelectronics",
+    "category": "sensor",
+    "kind": "integrated_sensor",
+    "capabilities": [
+      "distance"
+    ],
+    "interfaces": [
+      "I2C"
+    ],
+    "supply_v": {
+      "min": 2.6,
+      "typ": 3.3,
+      "max": 3.5
+    },
+    "default_i2c_address": "0x29",
+    "planning_active_current_ma": 20,
+    "planning_sleep_current_ua": 5,
+    "unit_price_cny": 30,
+    "lifecycle": "active",
+    "confidence": 0.95,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "measurement_range": {
+      "distance_mm": {
+        "min": 0,
+        "max": 4000
+      }
+    },
+    "source": {
+      "title": "VL53L1X Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html"
+    }
+  }
+}

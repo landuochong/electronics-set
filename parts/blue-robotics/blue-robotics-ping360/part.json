@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.1.0",
+  "id": "blue-robotics/blue-robotics-ping360",
+  "legacy_ids": [
+    "blue-robotics-ping360"
+  ],
+  "name": "Blue Robotics Ping360 扫描成像声呐",
+  "manufacturer_id": "blue-robotics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "instrument",
+  "capabilities": [
+    "sonar",
+    "scanning_sonar",
+    "underwater_imaging",
+    "obstacle_detection"
+  ],
+  "interfaces": [
+    "USB",
+    "ETHERNET",
+    "RS485"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 11.0,
+      "typ": 12.0,
+      "max": 18.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "Ping360 Scanning Imaging Sonar Product Page",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sonars/imaging-sonars/ping360-sonar-r1-rp/"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "blue-robotics-ping360",
+    "source_files": [
+      "data/electronics_kb/entries/blue-robotics-ping360.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/blue-robotics-ping360.md": "dd0e862f8b18dbef7792fca2e6ffd59ca81286f6797ba1cf9b81df2af34f0f81"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "blue-robotics-ping360",
+    "name": "Blue Robotics Ping360 扫描成像声呐",
+    "manufacturer": "Blue Robotics",
+    "category": "sensor",
+    "kind": "underwater_scanning_sonar",
+    "capabilities": [
+      "sonar",
+      "scanning_sonar",
+      "underwater_imaging",
+      "obstacle_detection"
+    ],
+    "interfaces": [
+      "USB",
+      "ETHERNET",
+      "RS485"
+    ],
+    "supply_v": {
+      "min": 11.0,
+      "typ": 12.0,
+      "max": 18.0
+    },
+    "external_power_required": true,
+    "lifecycle": "active",
+    "confidence": 0.94,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "measurement_range": {
+      "distance_m": {
+        "min": 0.75,
+        "max": 50
+      },
+      "depth_rating_m": 300
+    },
+    "source": {
+      "title": "Ping360 Scanning Imaging Sonar Product Page",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sonars/imaging-sonars/ping360-sonar-r1-rp/"
+    }
+  }
+}

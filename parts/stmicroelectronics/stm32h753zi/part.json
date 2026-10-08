@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/stm32h753zi",
+  "legacy_ids": [
+    "stm32h753zi"
+  ],
+  "name": "STM32H753ZI MCU",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "mcu",
+  "product_type": "chip",
+  "capabilities": [
+    "high_performance",
+    "security",
+    "i2c",
+    "spi",
+    "uart",
+    "adc",
+    "can_fd",
+    "usb",
+    "ethernet"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "USB",
+    "ETHERNET",
+    "GPIO",
+    "ADC",
+    "PWM"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.62,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "STM32H753ZI Product Page",
+      "authority": "official",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32h753zi.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "stm32h753zi",
+    "source_files": [
+      "data/electronics_kb/entries/stm32h753zi.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/stm32h753zi.md": "f16e38716cfe7485ac74ec04af67cd8d8d93457702272760002ea81c39241b72"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "stm32h753zi",
+    "name": "STM32H753ZI MCU",
+    "manufacturer": "STMicroelectronics",
+    "category": "mcu",
+    "kind": "microcontroller",
+    "family": "STM32H7",
+    "capabilities": [
+      "high_performance",
+      "security",
+      "i2c",
+      "spi",
+      "uart",
+      "adc",
+      "can_fd",
+      "usb",
+      "ethernet"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "USB",
+      "ETHERNET",
+      "GPIO",
+      "ADC",
+      "PWM"
+    ],
+    "supply_v": {
+      "min": 1.62,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "lifecycle": "active",
+    "confidence": 0.97,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "STM32H753ZI Product Page",
+      "authority": "official",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32h753zi.html"
+    }
+  }
+}

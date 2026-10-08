@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.1.0",
+  "id": "omron/omron-g5v-1-dc3",
+  "legacy_ids": [
+    "omron-g5v-1-dc3"
+  ],
+  "name": "Omron G5V-1 DC3 信号继电器",
+  "manufacturer_id": "omron",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "actuator",
+  "product_type": "component",
+  "capabilities": [
+    "relay_control"
+  ],
+  "interfaces": [
+    "DRIVER"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.0,
+      "typ": 3.0,
+      "max": 3.3,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 50,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "G5V-1 Datasheet",
+      "authority": "official",
+      "url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "omron-g5v-1-dc3",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "omron-g5v-1-dc3",
+    "name": "Omron G5V-1 DC3 信号继电器",
+    "manufacturer": "OMRON",
+    "category": "actuator",
+    "kind": "pcb_relay",
+    "capabilities": [
+      "relay_control"
+    ],
+    "requires_capabilities": [
+      "relay_driver"
+    ],
+    "interfaces": [
+      "DRIVER"
+    ],
+    "supply_v": {
+      "min": 3.0,
+      "typ": 3.0,
+      "max": 3.3
+    },
+    "coil_voltage_v": 3.0,
+    "coil_current_ma": 50,
+    "planning_active_current_ma": 50,
+    "contact_rating": {
+      "dc": {
+        "voltage_v": 24,
+        "current_a": 1.0
+      },
+      "ac": {
+        "voltage_v": 125,
+        "current_a": 0.5
+      }
+    },
+    "lifecycle": "active",
+    "confidence": 0.91,
+    "verification": "source_verified",
+    "source": {
+      "title": "G5V-1 Datasheet",
+      "authority": "official",
+      "url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf"
+    }
+  }
+}

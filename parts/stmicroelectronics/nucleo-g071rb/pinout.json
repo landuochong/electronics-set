@@ -1,0 +1,263 @@
+{
+  "part_id": "stmicroelectronics/nucleo-g071rb",
+  "coverage": "partial_gpio_extract",
+  "validation_status": "needs_review",
+  "source_id": "pinout",
+  "legacy": {
+    "template_id": "pin-template-nucleo-g071rb-arduino",
+    "board_revision": "MB1360 / UM2324 Rev 5",
+    "verification": "source_verified",
+    "source_id": "st-um2324-nucleo-g0-64",
+    "source_section": "Table 12 ARDUINO connector pinout; Table 13 I/O assignment",
+    "gpio_matrix_interfaces": [],
+    "pins": [
+      {
+        "pin": "PB9",
+        "header": "CN5.D14",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "i2c_sda"
+        ]
+      },
+      {
+        "pin": "PB8",
+        "header": "CN5.D15",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "i2c_scl"
+        ]
+      },
+      {
+        "pin": "PA5",
+        "header": "CN5.D13",
+        "risk": 2,
+        "tags": [
+          "gpio",
+          "spi_sclk",
+          "onboard_led"
+        ]
+      },
+      {
+        "pin": "PA6",
+        "header": "CN5.D12",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "spi_miso"
+        ]
+      },
+      {
+        "pin": "PA7",
+        "header": "CN5.D11",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "spi_mosi",
+          "pwm"
+        ],
+        "alternate_functions": {
+          "PWM": "TIM14_CH1"
+        }
+      },
+      {
+        "pin": "PB0",
+        "header": "CN5.D10",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "spi_cs",
+          "pwm"
+        ],
+        "alternate_functions": {
+          "PWM": "TIM3_CH3"
+        }
+      },
+      {
+        "pin": "PC7",
+        "header": "CN5.D9",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "pwm"
+        ],
+        "pwm_priority": 1,
+        "alternate_functions": {
+          "PWM": "TIM3_CH2"
+        }
+      },
+      {
+        "pin": "PA9",
+        "header": "CN5.D8",
+        "risk": 0,
+        "tags": [
+          "gpio"
+        ]
+      },
+      {
+        "pin": "PA8",
+        "header": "CN9.D7",
+        "risk": 0,
+        "tags": [
+          "gpio"
+        ]
+      },
+      {
+        "pin": "PB14",
+        "header": "CN9.D6",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "pwm"
+        ],
+        "alternate_functions": {
+          "PWM": "TIM15_CH1"
+        }
+      },
+      {
+        "pin": "PB4",
+        "header": "CN9.D5",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "pwm"
+        ],
+        "pwm_priority": 0,
+        "alternate_functions": {
+          "PWM": "TIM3_CH1"
+        }
+      },
+      {
+        "pin": "PB5",
+        "header": "CN9.D4",
+        "risk": 0,
+        "tags": [
+          "gpio"
+        ]
+      },
+      {
+        "pin": "PB3",
+        "header": "CN9.D3",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "pwm"
+        ],
+        "alternate_functions": {
+          "PWM": "TIM1_CH2"
+        }
+      },
+      {
+        "pin": "PA10",
+        "header": "CN9.D2",
+        "risk": 0,
+        "tags": [
+          "gpio"
+        ]
+      },
+      {
+        "pin": "PC4",
+        "header": "CN9.D1",
+        "risk": 1,
+        "tags": [
+          "gpio",
+          "uart_tx"
+        ]
+      },
+      {
+        "pin": "PC5",
+        "header": "CN9.D0",
+        "risk": 1,
+        "tags": [
+          "gpio",
+          "uart_rx"
+        ]
+      },
+      {
+        "pin": "PA2",
+        "header": "CN10",
+        "risk": 7,
+        "tags": [
+          "gpio",
+          "uart2_tx",
+          "stlink_vcp"
+        ]
+      },
+      {
+        "pin": "PA3",
+        "header": "CN10",
+        "risk": 7,
+        "tags": [
+          "gpio",
+          "uart2_rx",
+          "stlink_vcp"
+        ]
+      },
+      {
+        "pin": "PC13",
+        "header": "CN7",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "user_button"
+        ]
+      },
+      {
+        "pin": "PA13",
+        "header": "CN7",
+        "risk": 9,
+        "tags": [
+          "gpio",
+          "swdio"
+        ]
+      },
+      {
+        "pin": "PA14",
+        "header": "CN7",
+        "risk": 9,
+        "tags": [
+          "gpio",
+          "swclk",
+          "boot0"
+        ]
+      },
+      {
+        "pin": "PC14",
+        "header": "CN7",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "lse"
+        ]
+      },
+      {
+        "pin": "PC15",
+        "header": "CN7",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "lse"
+        ]
+      },
+      {
+        "pin": "PF0",
+        "header": "CN7",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "hse"
+        ]
+      },
+      {
+        "pin": "PF1",
+        "header": "CN7",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "hse"
+        ]
+      }
+    ]
+  }
+}

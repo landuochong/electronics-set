@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.1.0",
+  "id": "texas-instruments/bq24074-integration-reference",
+  "legacy_ids": [
+    "bq24074-integration-reference"
+  ],
+  "name": "BQ24074 单节锂电充电与 PowerPath（外围电路待设计）",
+  "manufacturer_id": "texas-instruments",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "power",
+  "product_type": "reference_design",
+  "capabilities": [
+    "single_cell_li_ion_charging",
+    "power_path"
+  ],
+  "interfaces": [
+    "POWER"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 4.35,
+      "typ": 5.0,
+      "max": 10.2,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 2,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 10,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "BQ24074 product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/BQ24074"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "bq24074-integration-reference",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "bq24074-integration-reference",
+    "name": "BQ24074 单节锂电充电与 PowerPath（外围电路待设计）",
+    "manufacturer": "Texas Instruments",
+    "category": "power",
+    "kind": "power_ic_reference",
+    "capabilities": [
+      "single_cell_li_ion_charging",
+      "power_path"
+    ],
+    "interfaces": [
+      "POWER"
+    ],
+    "supply_v": {
+      "min": 4.35,
+      "typ": 5.0,
+      "max": 10.2
+    },
+    "planning_active_current_ma": 2,
+    "planning_sleep_current_ua": 10,
+    "lifecycle": "active",
+    "confidence": 0.93,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "BQ24074 product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/BQ24074"
+    }
+  }
+}

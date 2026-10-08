@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/lis2mdl",
+  "legacy_ids": [
+    "lis2mdl"
+  ],
+  "name": "LIS2MDL 三轴磁力计",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "chip",
+  "capabilities": [
+    "magnetic_field",
+    "magnetic_heading"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.71,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 0.3,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 1,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "LIS2MDL Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.st.com/en/mems-and-sensors/lis2mdl.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "lis2mdl",
+    "source_files": [
+      "data/electronics_kb/entries/lis2mdl.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/lis2mdl.md": "d64bd05fcea3d71e481043c9df53b40a427ab2b5d2096277aafe8af4993ea73e"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "lis2mdl",
+    "name": "LIS2MDL 三轴磁力计",
+    "manufacturer": "STMicroelectronics",
+    "category": "sensor",
+    "kind": "magnetometer_ic",
+    "capabilities": [
+      "magnetic_field",
+      "magnetic_heading"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI"
+    ],
+    "supply_v": {
+      "min": 1.71,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "default_i2c_address": "0x1E",
+    "planning_active_current_ma": 0.3,
+    "planning_sleep_current_ua": 1,
+    "lifecycle": "active",
+    "confidence": 0.95,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "LIS2MDL Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.st.com/en/mems-and-sensors/lis2mdl.html"
+    }
+  }
+}

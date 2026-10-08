@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.1.0",
+  "id": "bosch-sensortec/bmp390",
+  "legacy_ids": [
+    "bmp390"
+  ],
+  "name": "BMP390 气压传感器（模块载板待选）",
+  "manufacturer_id": "bosch-sensortec",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "chip",
+  "capabilities": [
+    "pressure"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.65,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 0.7,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 1,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "BMP390 Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/pressure-sensors/pressure-sensors-bmp390.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "bmp390",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/bmp390.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/bmp390.md": "08e25116b94eaeb0c74a1a3caf6d52779d026488625fe7704bdb7d1eaf93f5da"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "bmp390",
+    "name": "BMP390 气压传感器（模块载板待选）",
+    "manufacturer": "Bosch Sensortec",
+    "category": "sensor",
+    "kind": "sensor_ic",
+    "capabilities": [
+      "pressure"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI"
+    ],
+    "supply_v": {
+      "min": 1.65,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "default_i2c_address": "0x77",
+    "planning_active_current_ma": 0.7,
+    "planning_sleep_current_ua": 1,
+    "unit_price_cny": 28,
+    "lifecycle": "active",
+    "confidence": 0.95,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "measurement_range": {
+      "pressure_hpa": {
+        "min": 300,
+        "max": 1250
+      }
+    },
+    "source": {
+      "title": "BMP390 Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/pressure-sensors/pressure-sensors-bmp390.html"
+    }
+  }
+}

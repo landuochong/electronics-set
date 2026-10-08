@@ -1,0 +1,125 @@
+{
+  "schema_version": "0.1.0",
+  "id": "semtech/sx1262-module",
+  "legacy_ids": [
+    "sx1262-module"
+  ],
+  "name": "SX1262 LoRa 模块",
+  "manufacturer_id": "semtech",
+  "manufacturer_role": "reference_chip_vendor",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "communication",
+  "product_type": "component",
+  "capabilities": [
+    "lora"
+  ],
+  "interfaces": [
+    "SPI"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.8,
+      "typ": 3.3,
+      "max": 3.7,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 120,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 2,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "SX1262 product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.semtech.com/products/wireless-rf/lora-connect/sx1262"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "只明确参考芯片厂家，具体模块/载板制造商未知",
+    "旧条目缺少产品类型，暂归 component",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "sx1262-module",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "sx1262-module",
+    "name": "SX1262 LoRa 模块",
+    "manufacturer": "Semtech/reference module",
+    "category": "communication",
+    "capabilities": [
+      "lora"
+    ],
+    "interfaces": [
+      "SPI"
+    ],
+    "supply_v": {
+      "min": 1.8,
+      "typ": 3.3,
+      "max": 3.7
+    },
+    "planning_active_current_ma": 120,
+    "planning_sleep_current_ua": 2,
+    "unit_price_cny": 38,
+    "lifecycle": "active",
+    "confidence": 0.82,
+    "verification": "needs_board_vendor_review",
+    "source": {
+      "title": "SX1262 product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.semtech.com/products/wireless-rf/lora-connect/sx1262"
+    }
+  }
+}

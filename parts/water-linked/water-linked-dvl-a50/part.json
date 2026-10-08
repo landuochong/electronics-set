@@ -1,0 +1,148 @@
+{
+  "schema_version": "0.1.0",
+  "id": "water-linked/water-linked-dvl-a50",
+  "legacy_ids": [
+    "water-linked-dvl-a50"
+  ],
+  "name": "Water Linked DVL A50 多普勒测速仪",
+  "manufacturer_id": "water-linked",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "instrument",
+  "capabilities": [
+    "dvl",
+    "underwater_velocity",
+    "altitude_above_bottom",
+    "dead_reckoning"
+  ],
+  "interfaces": [
+    "ETHERNET",
+    "UART"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 10.0,
+      "typ": 24.0,
+      "max": 30.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 167,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_active_power_w": {
+      "value": 4,
+      "unit": "W",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "DVL A50 Documentation and Datasheet v2",
+      "authority": "official",
+      "url": "https://docs.waterlinked.com/dvl/dvl-a50/"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_power_w",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "water-linked-dvl-a50",
+    "source_files": [
+      "data/electronics_kb/entries/water-linked-dvl-a50.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/water-linked-dvl-a50.md": "36dd585c88529285a7870a78c0e6f3c7e3051dc3aae067607c79130ec42b899f"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "water-linked-dvl-a50",
+    "name": "Water Linked DVL A50 多普勒测速仪",
+    "manufacturer": "Water Linked",
+    "category": "sensor",
+    "kind": "doppler_velocity_log",
+    "capabilities": [
+      "dvl",
+      "underwater_velocity",
+      "altitude_above_bottom",
+      "dead_reckoning"
+    ],
+    "interfaces": [
+      "ETHERNET",
+      "UART"
+    ],
+    "supply_v": {
+      "min": 10.0,
+      "typ": 24.0,
+      "max": 30.0
+    },
+    "external_power_required": true,
+    "planning_active_current_ma": 167,
+    "planning_active_power_w": 4,
+    "power_on_surge_w": 35,
+    "lifecycle": "active",
+    "confidence": 0.97,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "measurement_range": {
+      "altitude_m": {
+        "min": 0.05,
+        "max": 50
+      },
+      "velocity_m_s": {
+        "min": 0,
+        "max": 3.75
+      },
+      "depth_rating_m": [
+        300,
+        600
+      ]
+    },
+    "source": {
+      "title": "DVL A50 Documentation and Datasheet v2",
+      "authority": "official",
+      "url": "https://docs.waterlinked.com/dvl/dvl-a50/"
+    }
+  }
+}

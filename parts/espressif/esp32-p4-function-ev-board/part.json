@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.1.0",
+  "id": "espressif/esp32-p4-function-ev-board",
+  "legacy_ids": [
+    "esp32-p4-function-ev-board"
+  ],
+  "name": "ESP32-P4-Function-EV-Board",
+  "manufacturer_id": "espressif",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "controller_board",
+  "product_type": "board",
+  "capabilities": [
+    "vision",
+    "camera",
+    "display",
+    "h264",
+    "usb",
+    "ethernet",
+    "i2c",
+    "spi",
+    "uart",
+    "wifi",
+    "ble"
+  ],
+  "interfaces": [
+    "MIPI-CSI",
+    "MIPI-DSI",
+    "USB",
+    "ETHERNET",
+    "I2C",
+    "SPI",
+    "UART",
+    "GPIO",
+    "I2S"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 500,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "measured_board_sleep_current_ua": {
+      "value": null,
+      "unit": "uA",
+      "basis": "measured",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "ESP32-P4-Function-EV-Board v1.5.2 User Guide",
+      "authority": "official",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp32-p4-function-ev-board/user_guide.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/measured_board_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "esp32-p4-function-ev-board",
+    "source_files": [
+      "data/electronics_kb/entries/esp32-p4-function-ev-board.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/esp32-p4-function-ev-board.md": "7a61f9c2ec44a6009342604cfcea33ddc8494229bd8465e45578a469b664bcab"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "esp32-p4-function-ev-board",
+    "name": "ESP32-P4-Function-EV-Board",
+    "manufacturer": "Espressif",
+    "category": "controller_board",
+    "kind": "multimedia_evaluation_board",
+    "family": "ESP32-P4",
+    "capabilities": [
+      "vision",
+      "camera",
+      "display",
+      "h264",
+      "usb",
+      "ethernet",
+      "i2c",
+      "spi",
+      "uart",
+      "wifi",
+      "ble"
+    ],
+    "interfaces": [
+      "MIPI-CSI",
+      "MIPI-DSI",
+      "USB",
+      "ETHERNET",
+      "I2C",
+      "SPI",
+      "UART",
+      "GPIO",
+      "I2S"
+    ],
+    "supply_v": {
+      "typ": 5.0
+    },
+    "planning_active_current_ma": 500,
+    "measured_board_sleep_current_ua": null,
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "ESP32-P4-Function-EV-Board v1.5.2 User Guide",
+      "authority": "official",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp32-p4-function-ev-board/user_guide.html"
+    }
+  }
+}

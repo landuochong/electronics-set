@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "id": "waveshare/waveshare-oled-0.96-b",
+  "legacy_ids": [
+    "waveshare-oled-0.96-b"
+  ],
+  "name": "Waveshare 0.96inch OLED (B)",
+  "manufacturer_id": "waveshare",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "display",
+  "product_type": "module",
+  "capabilities": [
+    "oled_display"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.3,
+      "typ": 3.3,
+      "max": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 25,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "logic_voltage_v": {
+      "value": 3.3,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "0.96inch OLED (B) Wiki",
+      "authority": "official",
+      "url": "https://www.waveshare.com/wiki/0.96inch_OLED_%28B%29"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/logic_voltage_v",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "waveshare-oled-0.96-b",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "waveshare-oled-0.96-b",
+    "name": "Waveshare 0.96inch OLED (B)",
+    "manufacturer": "Waveshare",
+    "category": "display",
+    "kind": "display_module",
+    "family": "SSD1306",
+    "capabilities": [
+      "oled_display"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI"
+    ],
+    "supply_v": {
+      "min": 3.3,
+      "typ": 3.3,
+      "max": 5.0
+    },
+    "logic_voltage_v": 3.3,
+    "default_i2c_address": "0x3C",
+    "planning_active_current_ma": 25,
+    "display_size_inch": 0.96,
+    "resolution": [
+      128,
+      64
+    ],
+    "lifecycle": "active",
+    "confidence": 0.94,
+    "verification": "source_verified",
+    "source": {
+      "title": "0.96inch OLED (B) Wiki",
+      "authority": "official",
+      "url": "https://www.waveshare.com/wiki/0.96inch_OLED_%28B%29"
+    }
+  }
+}

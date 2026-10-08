@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.1.0",
+  "id": "tdk-invensense/icm-42688-p",
+  "legacy_ids": [
+    "icm-42688-p"
+  ],
+  "name": "ICM-42688-P 六轴 IMU（模块载板待选）",
+  "manufacturer_id": "tdk-invensense",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "chip",
+  "capabilities": [
+    "motion",
+    "acceleration",
+    "angular_velocity"
+  ],
+  "interfaces": [
+    "SPI",
+    "I2C",
+    "I3C"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.71,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 1.0,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 5,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "ICM-42688-P Datasheet",
+      "authority": "official_chip_reference",
+      "url": "https://invensense.tdk.com/wp-content/uploads/2020/04/ds-000347_icm-42688-p-datasheet.pdf"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "icm-42688-p",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/icm-42688-p.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/icm-42688-p.md": "8b4e5dc6ce03cd4e5d14618d9c40f9fb7b3999118c7c53c86143d9bc0abdf46c"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "icm-42688-p",
+    "name": "ICM-42688-P 六轴 IMU（模块载板待选）",
+    "manufacturer": "TDK InvenSense",
+    "category": "sensor",
+    "kind": "sensor_ic",
+    "capabilities": [
+      "motion",
+      "acceleration",
+      "angular_velocity"
+    ],
+    "interfaces": [
+      "SPI",
+      "I2C",
+      "I3C"
+    ],
+    "supply_v": {
+      "min": 1.71,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "default_i2c_address": "0x68",
+    "planning_active_current_ma": 1.0,
+    "planning_sleep_current_ua": 5,
+    "unit_price_cny": 35,
+    "lifecycle": "active",
+    "confidence": 0.94,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "ICM-42688-P Datasheet",
+      "authority": "official_chip_reference",
+      "url": "https://invensense.tdk.com/wp-content/uploads/2020/04/ds-000347_icm-42688-p-datasheet.pdf"
+    }
+  }
+}

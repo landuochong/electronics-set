@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["part_id", "coverage", "validation_status", "source_id", "legacy"],
+  "properties": {
+    "part_id": {"type": "string"},
+    "coverage": {"enum": ["partial_gpio_extract", "complete_physical_pinout"]},
+    "validation_status": {"enum": ["needs_review", "source_reviewed"]},
+    "source_id": {"type": "string"},
+    "legacy": {"type": "object", "required": ["board_revision", "pins", "source_section"], "properties": {
+      "board_revision": {"type": "string", "minLength": 1},
+      "source_section": {"type": "string", "minLength": 1},
+      "pins": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["pin", "header", "tags"], "properties": {"pin": {"type": "string", "minLength": 1}, "header": {"type": "string", "minLength": 1}, "tags": {"type": "array", "items": {"type": "string"}}}}}
+    }}
+  }
+}

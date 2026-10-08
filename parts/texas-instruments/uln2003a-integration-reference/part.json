@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.1.0",
+  "id": "texas-instruments/uln2003a-integration-reference",
+  "legacy_ids": [
+    "uln2003a-integration-reference"
+  ],
+  "name": "ULN2003A 七路继电器/感性负载驱动（外围电路待设计）",
+  "manufacturer_id": "texas-instruments",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "actuator",
+  "product_type": "reference_design",
+  "capabilities": [
+    "relay_driver"
+  ],
+  "interfaces": [
+    "GPIO"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.0,
+      "typ": 3.3,
+      "max": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "logic_voltage_v": {
+      "value": 3.3,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "ULN2003A product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/ULN2003A"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/logic_voltage_v",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "uln2003a-integration-reference",
+    "source_files": [
+      "data/components.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "uln2003a-integration-reference",
+    "name": "ULN2003A 七路继电器/感性负载驱动（外围电路待设计）",
+    "manufacturer": "Texas Instruments",
+    "category": "actuator",
+    "kind": "relay_driver_ic_reference",
+    "capabilities": [
+      "relay_driver"
+    ],
+    "interfaces": [
+      "GPIO"
+    ],
+    "supply_v": {
+      "min": 3.0,
+      "typ": 3.3,
+      "max": 5.0
+    },
+    "logic_voltage_v": 3.3,
+    "max_output_voltage_v": 50,
+    "max_output_current_per_channel_ma": 500,
+    "lifecycle": "active",
+    "confidence": 0.93,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "ULN2003A product page",
+      "authority": "official_chip_reference",
+      "url": "https://www.ti.com/product/ULN2003A"
+    }
+  }
+}

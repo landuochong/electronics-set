@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/nucleo-g071rb",
+  "legacy_ids": [
+    "nucleo-g071rb"
+  ],
+  "name": "NUCLEO-G071RB",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "controller_board",
+  "product_type": "board",
+  "capabilities": [
+    "i2c",
+    "spi",
+    "uart",
+    "adc",
+    "can"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "GPIO"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 45,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "measured_board_sleep_current_ua": {
+      "value": null,
+      "unit": "uA",
+      "basis": "measured",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "NUCLEO-G071RB product page",
+      "authority": "official",
+      "url": "https://www.st.com/en/evaluation-tools/nucleo-g071rb.html"
+    },
+    {
+      "id": "pinout",
+      "title": "UM2324 STM32 Nucleo-64 Boards MB1360 Rev 5",
+      "url": "https://www.st.com/resource/en/user_manual/dm00452640-stm32-nucleo-64-boards-with-stm32g07xrb-mcus-stmicroelectronics.pdf",
+      "authority": "official",
+      "section": "Table 12 ARDUINO connector pinout; Table 13 I/O assignment"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/measured_board_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "历史价格无采集时间，仅保留快照，不作为采购报价",
+    "引脚为历史部分 GPIO 摘录，不是完整引脚表"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "nucleo-g071rb",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/nucleo-g071rb.md",
+      "data/board_pins.json",
+      "data/sources.json"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/nucleo-g071rb.md": "17f004674cb4fc17cc123f1c073901ab326014773fe3e2ccaddc10dbed7ecde5",
+      "data/board_pins.json": "b350ae52324c5fc1b90d594c3f8e11050bf98b1353f7e47fa80095899cc5e7ce",
+      "data/sources.json": "0756624935509bd5e0b394e67578a09cadd654e57f8069616debb3c9312ceccf"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "nucleo-g071rb",
+    "name": "NUCLEO-G071RB",
+    "manufacturer": "STMicroelectronics",
+    "category": "controller_board",
+    "kind": "development_board",
+    "family": "STM32G0",
+    "capabilities": [
+      "i2c",
+      "spi",
+      "uart",
+      "adc",
+      "can"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "GPIO"
+    ],
+    "interface_counts": {
+      "I2C": 2,
+      "SPI": 2,
+      "UART": 4,
+      "CAN": 2
+    },
+    "supply_v": {
+      "typ": 5.0
+    },
+    "planning_active_current_ma": 45,
+    "measured_board_sleep_current_ua": null,
+    "unit_price_cny": 105,
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "verification": "source_verified",
+    "source": {
+      "title": "NUCLEO-G071RB product page",
+      "authority": "official",
+      "url": "https://www.st.com/en/evaluation-tools/nucleo-g071rb.html"
+    }
+  }
+}

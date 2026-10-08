@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1.0",
+  "id": "bitcraze/bitcraze-flow-deck-v2",
+  "legacy_ids": [
+    "bitcraze-flow-deck-v2"
+  ],
+  "name": "Bitcraze Flow deck v2 光流定高模块",
+  "manufacturer_id": "bitcraze",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "module",
+  "capabilities": [
+    "optical_flow",
+    "ground_velocity",
+    "distance",
+    "altitude_hold"
+  ],
+  "interfaces": [
+    "SPI",
+    "I2C",
+    "GPIO"
+  ],
+  "specifications": {},
+  "sources": [
+    {
+      "id": "primary",
+      "title": "Flow deck v2 Datasheet Rev. 1",
+      "authority": "official",
+      "url": "https://www.bitcraze.io/documentation/hardware/flow_deck_2/flow_deck_2-datasheet.pdf"
+    }
+  ],
+  "evidence": [],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "bitcraze-flow-deck-v2",
+    "source_files": [
+      "data/electronics_kb/entries/bitcraze-flow-deck-v2.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/bitcraze-flow-deck-v2.md": "9bff2028433c07859de191071d1308ad69967db73c2d4d8c8621e29bec1da60a"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "bitcraze-flow-deck-v2",
+    "name": "Bitcraze Flow deck v2 光流定高模块",
+    "manufacturer": "Bitcraze",
+    "category": "sensor",
+    "kind": "optical_flow_and_range_module",
+    "capabilities": [
+      "optical_flow",
+      "ground_velocity",
+      "distance",
+      "altitude_hold"
+    ],
+    "interfaces": [
+      "SPI",
+      "I2C",
+      "GPIO"
+    ],
+    "lifecycle": "active",
+    "confidence": 0.94,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "source": {
+      "title": "Flow deck v2 Datasheet Rev. 1",
+      "authority": "official",
+      "url": "https://www.bitcraze.io/documentation/hardware/flow_deck_2/flow_deck_2-datasheet.pdf"
+    }
+  }
+}

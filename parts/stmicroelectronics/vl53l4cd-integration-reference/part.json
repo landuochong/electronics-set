@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/vl53l4cd-integration-reference",
+  "legacy_ids": [
+    "vl53l4cd-integration-reference"
+  ],
+  "name": "VL53L4CD ToF 器件（载板集成待复核）",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "reference_chip_vendor",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "reference_design",
+  "capabilities": [
+    "distance",
+    "proximity"
+  ],
+  "interfaces": [
+    "I2C"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 2.6,
+      "typ": 2.8,
+      "max": 3.5,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 10,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 55,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "VL53L4CD Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.st.com/en/imaging-and-photonics-solutions/vl53l4cd.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "只明确参考芯片厂家，具体模块/载板制造商未知",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "vl53l4cd-integration-reference",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/vl53l4cd-integration-reference.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/vl53l4cd-integration-reference.md": "c68e76bfda2afc420b3f4204d06b6a8aa7b9f90e5f6cb35d25546de5809f9e79"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "vl53l4cd-integration-reference",
+    "name": "VL53L4CD ToF 器件（载板集成待复核）",
+    "manufacturer": "STMicroelectronics/reference carrier",
+    "category": "sensor",
+    "kind": "integrated_sensor_reference",
+    "capabilities": [
+      "distance",
+      "proximity"
+    ],
+    "interfaces": [
+      "I2C"
+    ],
+    "supply_v": {
+      "min": 2.6,
+      "typ": 2.8,
+      "max": 3.5
+    },
+    "default_i2c_address": "0x29",
+    "planning_active_current_ma": 10,
+    "planning_sleep_current_ua": 55,
+    "lifecycle": "active",
+    "confidence": 0.93,
+    "verification": "needs_board_vendor_review",
+    "integration_review_required": true,
+    "measurement_range": {
+      "distance_mm": {
+        "min": 1,
+        "max": 1200
+      }
+    },
+    "source": {
+      "title": "VL53L4CD Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.st.com/en/imaging-and-photonics-solutions/vl53l4cd.html"
+    }
+  }
+}

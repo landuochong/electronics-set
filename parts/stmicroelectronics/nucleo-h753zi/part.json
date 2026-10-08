@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/nucleo-h753zi",
+  "legacy_ids": [
+    "nucleo-h753zi"
+  ],
+  "name": "NUCLEO-H753ZI",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "controller_board",
+  "product_type": "board",
+  "capabilities": [
+    "high_performance",
+    "security",
+    "i2c",
+    "spi",
+    "uart",
+    "adc",
+    "can_fd",
+    "usb",
+    "ethernet"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "CAN",
+    "USB",
+    "ETHERNET",
+    "GPIO",
+    "ADC",
+    "PWM"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 180,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "measured_board_sleep_current_ua": {
+      "value": null,
+      "unit": "uA",
+      "basis": "measured",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "NUCLEO-H753ZI Product Page",
+      "authority": "official",
+      "url": "https://www.st.com/en/evaluation-tools/nucleo-h753zi.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/measured_board_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "nucleo-h753zi",
+    "source_files": [
+      "data/electronics_kb/entries/nucleo-h753zi.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/nucleo-h753zi.md": "859a0cc495678083d7e836507ec52b1f8f7a5a780e2ef9986e1135b25f17642f"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "nucleo-h753zi",
+    "name": "NUCLEO-H753ZI",
+    "manufacturer": "STMicroelectronics",
+    "category": "controller_board",
+    "kind": "development_board",
+    "family": "STM32H7",
+    "capabilities": [
+      "high_performance",
+      "security",
+      "i2c",
+      "spi",
+      "uart",
+      "adc",
+      "can_fd",
+      "usb",
+      "ethernet"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "CAN",
+      "USB",
+      "ETHERNET",
+      "GPIO",
+      "ADC",
+      "PWM"
+    ],
+    "supply_v": {
+      "typ": 5.0
+    },
+    "planning_active_current_ma": 180,
+    "measured_board_sleep_current_ua": null,
+    "lifecycle": "active",
+    "confidence": 0.97,
+    "verification": "source_verified",
+    "source": {
+      "title": "NUCLEO-H753ZI Product Page",
+      "authority": "official",
+      "url": "https://www.st.com/en/evaluation-tools/nucleo-h753zi.html"
+    }
+  }
+}

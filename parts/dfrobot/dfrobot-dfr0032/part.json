@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.1.0",
+  "id": "dfrobot/dfrobot-dfr0032",
+  "legacy_ids": [
+    "dfrobot-dfr0032"
+  ],
+  "name": "DFRobot DFR0032 数字蜂鸣器模块",
+  "manufacturer_id": "dfrobot",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "actuator",
+  "product_type": "module",
+  "capabilities": [
+    "buzzer_alert"
+  ],
+  "interfaces": [
+    "GPIO"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 3.3,
+      "typ": 5.0,
+      "max": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 30,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "DFRobot Digital Buzzer Module DFR0032",
+      "authority": "official",
+      "url": "https://www.dfrobot.com/product-84.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "历史价格无采集时间，仅保留快照，不作为采购报价"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "dfrobot-dfr0032",
+    "source_files": [
+      "data/electronics_kb/entries/dfrobot-dfr0032.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/dfrobot-dfr0032.md": "4870107b0c11279525481b1a7cecae076f0147b00b63c754cc49a89bd1f656a0"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "dfrobot-dfr0032",
+    "name": "DFRobot DFR0032 数字蜂鸣器模块",
+    "manufacturer": "DFRobot",
+    "category": "actuator",
+    "kind": "buzzer_module",
+    "capabilities": [
+      "buzzer_alert"
+    ],
+    "interfaces": [
+      "GPIO"
+    ],
+    "supply_v": {
+      "min": 3.3,
+      "typ": 5.0,
+      "max": 5.0
+    },
+    "planning_active_current_ma": 30,
+    "unit_price_cny": 12,
+    "lifecycle": "active",
+    "confidence": 0.9,
+    "verification": "source_verified",
+    "source": {
+      "title": "DFRobot Digital Buzzer Module DFR0032",
+      "authority": "official",
+      "url": "https://www.dfrobot.com/product-84.html"
+    }
+  }
+}

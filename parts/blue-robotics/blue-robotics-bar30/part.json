@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.1.0",
+  "id": "blue-robotics/blue-robotics-bar30",
+  "legacy_ids": [
+    "blue-robotics-bar30"
+  ],
+  "name": "Blue Robotics Bar30 深度/压力传感器",
+  "manufacturer_id": "blue-robotics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "module",
+  "capabilities": [
+    "underwater_pressure",
+    "depth",
+    "water_temperature"
+  ],
+  "interfaces": [
+    "I2C"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 2.5,
+      "typ": 3.3,
+      "max": 5.5,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 2,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "logic_voltage_v": {
+      "value": 3.3,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "Bar High-Resolution Depth/Pressure Sensors",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sensors-cameras/sensors/bar-depth-pressure-sensor/"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/logic_voltage_v",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "blue-robotics-bar30",
+    "source_files": [
+      "data/electronics_kb/entries/blue-robotics-bar30.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/blue-robotics-bar30.md": "57cef732fa1470e1d9b6dbe39bcc871addbbee8bdde417bce8556e6338220c83"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "blue-robotics-bar30",
+    "name": "Blue Robotics Bar30 深度/压力传感器",
+    "manufacturer": "Blue Robotics",
+    "category": "sensor",
+    "kind": "underwater_depth_module",
+    "capabilities": [
+      "underwater_pressure",
+      "depth",
+      "water_temperature"
+    ],
+    "interfaces": [
+      "I2C"
+    ],
+    "supply_v": {
+      "min": 2.5,
+      "typ": 3.3,
+      "max": 5.5
+    },
+    "logic_voltage_v": 3.3,
+    "default_i2c_address": "0x76",
+    "planning_active_current_ma": 2,
+    "lifecycle": "active",
+    "confidence": 0.97,
+    "verification": "source_verified",
+    "integration_review_required": true,
+    "measurement_range": {
+      "pressure_bar": {
+        "min": 0,
+        "max": 30
+      },
+      "depth_m_approx": {
+        "min": 0,
+        "max": 300
+      }
+    },
+    "source": {
+      "title": "Bar High-Resolution Depth/Pressure Sensors",
+      "authority": "official",
+      "url": "https://bluerobotics.com/store/sensors-cameras/sensors/bar-depth-pressure-sensor/"
+    }
+  }
+}

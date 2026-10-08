@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "electronics-set part v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "name", "manufacturer_id", "manufacturer_role", "mpn", "hardware_revision", "category", "product_type", "capabilities", "interfaces", "specifications", "sources", "evidence", "relations", "validation", "unresolved", "provenance"],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9._-]*$"},
+    "name": {"type": "string", "minLength": 1},
+    "manufacturer_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "manufacturer_role": {"enum": ["product_manufacturer", "reference_chip_vendor", "unknown"]},
+    "mpn": {"type": ["string", "null"]},
+    "hardware_revision": {"type": ["string", "null"]},
+    "legacy_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "category": {"type": "string", "minLength": 1},
+    "product_type": {"enum": ["chip", "module", "board", "reference_design", "component", "instrument"]},
+    "capabilities": {"$ref": "#/$defs/strings"},
+    "interfaces": {"$ref": "#/$defs/strings"},
+    "specifications": {"type": "object", "additionalProperties": {"$ref": "#/$defs/quantity"}},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
+    "evidence": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["field", "source_id", "binding", "locator"], "properties": {"field": {"type": "string", "pattern": "^/"}, "source_id": {"type": "string"}, "binding": {"enum": ["explicit", "inherited_unreviewed"]}, "locator": {"type": ["string", "null"]}}}},
+    "relations": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["type", "target"], "properties": {"type": {"enum": ["uses_chip", "uses_module", "variant_of", "candidate_alternative"]}, "target": {"type": "string"}}}},
+    "validation": {"type": "object", "additionalProperties": false, "required": ["status", "reviews", "tests"], "properties": {
+      "status": {"enum": ["needs_review", "source_reviewed"]},
+      "reviews": {"type": "array", "items": {"type": "object", "required": ["reviewer", "date", "notes"], "properties": {"reviewer": {"type": "string", "minLength": 1}, "date": {"type": "string", "format": "date"}, "notes": {"type": "string", "minLength": 1}}, "additionalProperties": false}},
+      "tests": {"type": "array", "items": {"type": "object", "required": ["hardware_revision", "firmware", "conditions", "result", "evidence"], "properties": {"hardware_revision": {"type": "string", "minLength": 1}, "firmware": {"type": "string", "minLength": 1}, "conditions": {"type": "string", "minLength": 1}, "result": {"enum": ["passed", "failed", "inconclusive"]}, "evidence": {"type": "string", "minLength": 1}}, "additionalProperties": false}}
+    }},
+    "unresolved": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "provenance": {"type": "object", "additionalProperties": false, "required": ["origin", "origin_id", "license", "copyright"], "properties": {"origin": {"type": "string"}, "origin_id": {"type": "string"}, "source_files": {"type": "array", "items": {"type": "string"}}, "source_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}, "license": {"type": "string"}, "copyright": {"type": "string"}}},
+    "extensions": {"type": "object"},
+    "legacy": {"type": "object"}
+  },
+  "$defs": {
+    "strings": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "quantity": {"type": "object", "additionalProperties": false, "required": ["unit", "basis"], "properties": {"unit": {"type": "string", "minLength": 1}, "basis": {"enum": ["recommended_operating", "absolute_maximum", "typical", "planning_estimate", "measured", "legacy_unspecified"]}, "value": {"type": ["number", "null"]}, "min": {"type": ["number", "null"]}, "typ": {"type": ["number", "null"]}, "max": {"type": ["number", "null"]}, "port": {"type": ["string", "null"]}, "conditions": {"type": ["string", "null"]}}, "anyOf": [{"required": ["value"]}, {"required": ["min"]}, {"required": ["typ"]}, {"required": ["max"]}]},
+    "source": {"type": "object", "additionalProperties": false, "required": ["id", "title", "url", "authority"], "properties": {"id": {"type": "string", "minLength": 1}, "title": {"type": "string", "minLength": 1}, "url": {"type": "string", "format": "uri", "pattern": "^https://"}, "authority": {"enum": ["official", "official_chip_reference", "internal_test", "third_party"]}, "version": {"type": ["string", "null"]}, "section": {"type": ["string", "null"]}}}
+  }
+}

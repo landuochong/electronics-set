@@ -1,0 +1,158 @@
+{
+  "part_id": "espressif/esp32-c3-devkitm-1",
+  "coverage": "partial_gpio_extract",
+  "validation_status": "needs_review",
+  "source_id": "pinout",
+  "legacy": {
+    "template_id": "pin-template-esp32-c3-devkitm-1",
+    "board_revision": "no previous versions listed",
+    "verification": "source_verified",
+    "source_id": "espressif-esp32-c3-devkitm-1-user-guide",
+    "source_section": "Hardware Reference > Header Block",
+    "gpio_matrix_interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "PWM"
+    ],
+    "pins": [
+      {
+        "pin": "GPIO10",
+        "header": "J1.11",
+        "risk": 0,
+        "tags": [
+          "gpio"
+        ]
+      },
+      {
+        "pin": "GPIO3",
+        "header": "J1.5",
+        "risk": 0,
+        "tags": [
+          "gpio",
+          "adc"
+        ]
+      },
+      {
+        "pin": "GPIO0",
+        "header": "J1.9",
+        "risk": 1,
+        "tags": [
+          "gpio",
+          "adc",
+          "xtal32k"
+        ]
+      },
+      {
+        "pin": "GPIO1",
+        "header": "J1.10",
+        "risk": 1,
+        "tags": [
+          "gpio",
+          "adc",
+          "xtal32k"
+        ]
+      },
+      {
+        "pin": "GPIO4",
+        "header": "J3.11",
+        "risk": 2,
+        "tags": [
+          "gpio",
+          "jtag"
+        ]
+      },
+      {
+        "pin": "GPIO5",
+        "header": "J3.10",
+        "risk": 2,
+        "tags": [
+          "gpio",
+          "jtag"
+        ]
+      },
+      {
+        "pin": "GPIO6",
+        "header": "J3.9",
+        "risk": 2,
+        "tags": [
+          "gpio",
+          "jtag"
+        ]
+      },
+      {
+        "pin": "GPIO7",
+        "header": "J3.8",
+        "risk": 2,
+        "tags": [
+          "gpio",
+          "jtag"
+        ]
+      },
+      {
+        "pin": "GPIO2",
+        "header": "J1.4",
+        "risk": 9,
+        "tags": [
+          "gpio",
+          "strapping"
+        ]
+      },
+      {
+        "pin": "GPIO8",
+        "header": "J3.6",
+        "risk": 9,
+        "tags": [
+          "gpio",
+          "strapping",
+          "onboard_rgb"
+        ]
+      },
+      {
+        "pin": "GPIO9",
+        "header": "J3.5",
+        "risk": 9,
+        "tags": [
+          "gpio",
+          "strapping"
+        ]
+      },
+      {
+        "pin": "GPIO18",
+        "header": "J3.13",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "usb_d_minus"
+        ]
+      },
+      {
+        "pin": "GPIO19",
+        "header": "J3.14",
+        "risk": 8,
+        "tags": [
+          "gpio",
+          "usb_d_plus"
+        ]
+      },
+      {
+        "pin": "GPIO20",
+        "header": "J3.3",
+        "risk": 7,
+        "tags": [
+          "gpio",
+          "uart0_rx"
+        ]
+      },
+      {
+        "pin": "GPIO21",
+        "header": "J3.2",
+        "risk": 7,
+        "tags": [
+          "gpio",
+          "uart0_tx"
+        ]
+      }
+    ]
+  }
+}

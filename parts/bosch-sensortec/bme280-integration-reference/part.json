@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.1.0",
+  "id": "bosch-sensortec/bme280-integration-reference",
+  "legacy_ids": [
+    "bme280-integration-reference"
+  ],
+  "name": "BME280 温湿度气压器件（模块集成待复核）",
+  "manufacturer_id": "bosch-sensortec",
+  "manufacturer_role": "reference_chip_vendor",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "sensor",
+  "product_type": "reference_design",
+  "capabilities": [
+    "temperature_humidity",
+    "pressure"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "min": 1.71,
+      "typ": 3.3,
+      "max": 3.6,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 0.6,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "planning_sleep_current_ua": {
+      "value": 1,
+      "unit": "uA",
+      "basis": "planning_estimate",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "BME280 Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors/bme280"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对",
+    "只明确参考芯片厂家，具体模块/载板制造商未知",
+    "旧库标注需要载板集成复核"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "bme280-integration-reference",
+    "source_files": [
+      "data/components.json",
+      "data/electronics_kb/entries/bme280-integration-reference.md"
+    ],
+    "source_hashes": {
+      "data/components.json": "f14b1e92f7728e387460ac041b5f8993e651add757586ba262647fefe5cce605",
+      "data/electronics_kb/entries/bme280-integration-reference.md": "4066b2e0bb6d919828a8bade5d7e26f43b7fda9e4ac73caf12eb9c054a4ec8db"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "bme280-integration-reference",
+    "name": "BME280 温湿度气压器件（模块集成待复核）",
+    "manufacturer": "Bosch Sensortec/reference module",
+    "category": "sensor",
+    "kind": "sensor_ic_reference",
+    "capabilities": [
+      "temperature_humidity",
+      "pressure"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI"
+    ],
+    "supply_v": {
+      "min": 1.71,
+      "typ": 3.3,
+      "max": 3.6
+    },
+    "default_i2c_address": "0x76",
+    "planning_active_current_ma": 0.6,
+    "planning_sleep_current_ua": 1,
+    "lifecycle": "active",
+    "confidence": 0.9,
+    "verification": "needs_board_vendor_review",
+    "integration_review_required": true,
+    "source": {
+      "title": "BME280 Product Page",
+      "authority": "official_chip_reference",
+      "url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors/bme280"
+    }
+  }
+}

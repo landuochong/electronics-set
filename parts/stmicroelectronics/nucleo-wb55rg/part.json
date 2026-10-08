@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stmicroelectronics/nucleo-wb55rg",
+  "legacy_ids": [
+    "nucleo-wb55rg"
+  ],
+  "name": "NUCLEO-WB55RG",
+  "manufacturer_id": "stmicroelectronics",
+  "manufacturer_role": "product_manufacturer",
+  "mpn": null,
+  "hardware_revision": null,
+  "category": "controller_board",
+  "product_type": "board",
+  "capabilities": [
+    "low_power",
+    "ble",
+    "zigbee",
+    "thread",
+    "matter",
+    "i2c",
+    "spi",
+    "uart",
+    "adc",
+    "usb"
+  ],
+  "interfaces": [
+    "I2C",
+    "SPI",
+    "UART",
+    "USB",
+    "GPIO",
+    "ADC",
+    "PWM",
+    "RF_2.4GHZ"
+  ],
+  "specifications": {
+    "supply_voltage": {
+      "typ": 5.0,
+      "unit": "V",
+      "basis": "legacy_unspecified",
+      "port": null
+    },
+    "planning_active_current_ma": {
+      "value": 90,
+      "unit": "mA",
+      "basis": "planning_estimate",
+      "conditions": null
+    },
+    "measured_board_sleep_current_ua": {
+      "value": null,
+      "unit": "uA",
+      "basis": "measured",
+      "conditions": null
+    }
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "title": "NUCLEO-WB55RG Product Page",
+      "authority": "official",
+      "url": "https://www.st.com/en/evaluation-tools/nucleo-wb55rg.html"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "/specifications/supply_voltage",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/planning_active_current_ma",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    },
+    {
+      "field": "/specifications/measured_board_sleep_current_ua",
+      "source_id": "primary",
+      "binding": "inherited_unreviewed",
+      "locator": null
+    }
+  ],
+  "relations": [],
+  "validation": {
+    "status": "needs_review",
+    "reviews": [],
+    "tests": []
+  },
+  "unresolved": [
+    "迁移资料尚未逐字段核对来源及章节",
+    "精确订货号及硬件版本待核对",
+    "供电端口、工作范围与极限值语义待核对",
+    "接口与可用引脚资源待核对"
+  ],
+  "provenance": {
+    "origin": "ForgeAI local knowledge migration",
+    "origin_id": "nucleo-wb55rg",
+    "source_files": [
+      "data/electronics_kb/entries/nucleo-wb55rg.md"
+    ],
+    "source_hashes": {
+      "data/electronics_kb/entries/nucleo-wb55rg.md": "138f166129aed7fe7e4214fb0a53d1e5d770641e3a5114f05db3d16a4847b6d2"
+    },
+    "license": "BSD-3-Clause",
+    "copyright": "2026 landuochong"
+  },
+  "legacy": {
+    "id": "nucleo-wb55rg",
+    "name": "NUCLEO-WB55RG",
+    "manufacturer": "STMicroelectronics",
+    "category": "controller_board",
+    "kind": "wireless_development_board",
+    "family": "STM32WB",
+    "capabilities": [
+      "low_power",
+      "ble",
+      "zigbee",
+      "thread",
+      "matter",
+      "i2c",
+      "spi",
+      "uart",
+      "adc",
+      "usb"
+    ],
+    "interfaces": [
+      "I2C",
+      "SPI",
+      "UART",
+      "USB",
+      "GPIO",
+      "ADC",
+      "PWM",
+      "RF_2.4GHZ"
+    ],
+    "supply_v": {
+      "typ": 5.0
+    },
+    "planning_active_current_ma": 90,
+    "measured_board_sleep_current_ua": null,
+    "lifecycle": "active",
+    "confidence": 0.97,
+    "verification": "source_verified",
+    "source": {
+      "title": "NUCLEO-WB55RG Product Page",
+      "authority": "official",
+      "url": "https://www.st.com/en/evaluation-tools/nucleo-wb55rg.html"
+    }
+  }
+}
